@@ -82,8 +82,9 @@ number_of_questions_field.send_keys(
 number_of_questions_field.send_keys(Keys.DELETE)
 number_of_questions_field.send_keys(number_of_questions)
 
-generate_button = driver.find_element("class name", "Button_container__31fZ8")
-generate_button.click()
+generate_question_button = driver.find_element(
+    "class name", "Button_container__31fZ8")
+generate_question_button.click()
 
 time.sleep(5)
 
@@ -99,11 +100,25 @@ number_correct = driver.find_element("name", "answersMCQTrue")
 number_wrong = driver.find_element("name", "answersMCQFalse")
 # number_wrong.send_keys("3")
 
+all_buttons = driver.find_elements("class name", "Button_container__31fZ8")
+generate_answers_button = all_buttons[1]
+generate_answers_button.click()
+
+time.sleep(15)
+container = driver.find_element(
+    "class name", "AnswersMCQGenerate_footer__TAkKh")
+children = container.find_elements("xpath", ".//*")
+
+export_button = children[0]
+
+export_button.click()
+
 time.sleep(delay)
 
-generate_button = driver.find_element("class name", "Button_container__31fZ8")
-generate_button.click()
+# EXPORT PAGE
+excel_button = driver.find_element("class name", "ExportModal_excel__2i68v")
+excel_button.click()
 
-time.sleep(5)
+time.sleep(delay)
 
 driver.quit()
