@@ -15,7 +15,15 @@ topic = "Superposition"
 number_of_questions = "5"
 
 driver_path = "/opt/homebrew/bin/chromedriver"
-driver = webdriver.Chrome()
+
+options = webdriver.ChromeOptions()
+options.add_argument('--disable-extensions')
+options.add_argument('--profile-directory=Default')
+options.add_argument("--incognito")
+options.add_argument("--disable-plugins-discovery")
+options.add_argument("--start-maximized")
+
+driver = webdriver.Chrome(options=options)
 
 url = "https://app.getquizwizard.com/create-content/context"
 
