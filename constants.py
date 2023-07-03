@@ -1,10 +1,104 @@
 ############
 # SETTINGS #
 ############
-level = "high"  # low, middle, high
-grade = "12th grade"
-subject = "Physics"
-topic = "Superposition"
+
+metadata = [
+    {"level": "high", "grade": "12th grade",
+        "subject": "Physics", "topic": "Superposition"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Physics", "topic": "Newton's law"},
+    {"level": "middle", "grade": "8th grade",
+        "subject": "Chemistry", "topic": "Periodic Table"},
+    {"level": "low", "grade": "4th grade",
+        "subject": "Math", "topic": "Multiplication"},
+    {"level": "low", "grade": "5th grade", "subject": "Math", "topic": "Division"},
+    {"level": "middle", "grade": "9th grade",
+        "subject": "Biology", "topic": "Cells"},
+    {"level": "high", "grade": "11th grade",
+        "subject": "Math", "topic": "Calculus"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Chemistry", "topic": "Organic Chemistry"},
+    {"level": "middle", "grade": "7th grade",
+        "subject": "Physics", "topic": "Kinematics"},
+    {"level": "low", "grade": "6th grade",
+        "subject": "Biology", "topic": "Photosynthesis"},
+]
+
+metadata2 = [
+    {"level": "high", "grade": "12th grade",
+        "subject": "History", "topic": "World War II"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "English", "topic": "Shakespeare's Plays"},
+    {"level": "middle", "grade": "8th grade",
+        "subject": "Geography", "topic": "European Geography"},
+    {"level": "low", "grade": "4th grade",
+        "subject": "Art", "topic": "Color Theory"},
+    {"level": "low", "grade": "5th grade",
+        "subject": "Music", "topic": "Music Notation"},
+    {"level": "middle", "grade": "9th grade",
+        "subject": "Physical Education", "topic": "Team Sports"},
+    {"level": "high", "grade": "11th grade",
+        "subject": "English", "topic": "Poetry Analysis"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Philosophy", "topic": "Existentialism"},
+    {"level": "middle", "grade": "7th grade",
+        "subject": "Social Studies", "topic": "Ancient Civilizations"},
+    {"level": "low", "grade": "6th grade",
+        "subject": "Art", "topic": "Drawing Techniques"},
+]
+
+metadata3 = [
+    {"level": "high", "grade": "12th grade",
+        "subject": "Math", "topic": "Differential Calculus"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Math", "topic": "Integral Calculus"},
+    {"level": "middle", "grade": "8th grade",
+        "subject": "Math", "topic": "Geometry"},
+    {"level": "low", "grade": "4th grade",
+        "subject": "Math", "topic": "Multiplication"},
+    {"level": "low", "grade": "5th grade", "subject": "Math", "topic": "Division"},
+    {"level": "middle", "grade": "9th grade",
+        "subject": "Math", "topic": "Algebra"},
+    {"level": "high", "grade": "11th grade",
+        "subject": "Math", "topic": "Trigonometry"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Math", "topic": "Probability"},
+    {"level": "middle", "grade": "7th grade",
+        "subject": "Math", "topic": "Fractions"},
+    {"level": "low", "grade": "6th grade", "subject": "Math", "topic": "Decimals"},
+]
+
+metadata4 = [
+    {"level": "middle", "grade": "8th grade",
+        "subject": "Social Studies", "topic": "American Revolution"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Biology", "topic": "Genetics"},
+    {"level": "low", "grade": "5th grade",
+        "subject": "Geography", "topic": "Continents and Oceans"},
+    {"level": "middle", "grade": "9th grade",
+        "subject": "Computer Science", "topic": "Programming Basics"},
+    {"level": "high", "grade": "11th grade",
+        "subject": "History", "topic": "World War II"},
+    {"level": "low", "grade": "3rd grade", "subject": "Science",
+        "topic": "Life Cycle of a Butterfly"},
+    {"level": "middle", "grade": "7th grade",
+        "subject": "English", "topic": "Narrative Writing"},
+    {"level": "low", "grade": "4th grade",
+        "subject": "Arts", "topic": "Elements of Art"},
+    {"level": "high", "grade": "12th grade",
+        "subject": "Chemistry", "topic": "Organic Chemistry"},
+    {"level": "middle", "grade": "6th grade",
+        "subject": "Math", "topic": "Ratios and Proportions"},
+]
+
+
+cur_metadata = metadata4
+
+pos = 0
+level = cur_metadata[pos]["level"]  # low, middle, high
+grade = cur_metadata[pos]["grade"]
+subject = cur_metadata[pos]["subject"]
+topic = cur_metadata[pos]["topic"]
 number_of_questions = "5"
 
 
